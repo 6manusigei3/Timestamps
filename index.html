@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current Date and Time</title>
+</head>
+<body>
+  <h2>🕒 Current Date and Time</h2>
+
+  <button onclick="showDateTime()">Show Current Date & Time</button>
+  <p id="result"></p>
+
+  <script>
+    function showDateTime() {
+      // Create a new Date object
+      const now = new Date();
+
+      // Convert to readable string
+      const dateTime = now.toLocaleString();
+
+      // Display the result
+      document.getElementById("result").innerHTML = "📅 " + dateTime;
+    }
+  </script>
+</body>
+</html>
